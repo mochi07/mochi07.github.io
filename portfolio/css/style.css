@@ -109,24 +109,24 @@ body {
   margin-top: 100px;
 }*/
 
-  .lunch{width:550px; height:350px;}
+/*修正前 PC版で％設定するとリキット表示になるが元の画像サイズによって崩れやすいため、
+　px指定された方が安全
+  .lunch{width:80%; height:80%;}
   .odekake{width:80%; height:80%;}
   .diet{width:80%; height:80%;}
-  .support{width:80%; height:80%;}
+  .support{width:80%; height:80%;}*/
 
-/*修正前
+
 .lunch{width:550px; height:330px;}
 .odekake{width:550px; height:330px;}
 .diet{width:550px; height:330px;}
-.support{width:550px; height:330px;}*/
+.support{width:550px; height:330px;}
 
 /* ===PC版では<br>改行をしないため↓=== */
 .txt-contents br{
 	display: none;
 }
 /* ===================== */
-
-
 
 
 .content h3{
@@ -145,10 +145,13 @@ body {
 .content:nth-child(3){
   margin-left: 0;
   margin-bottom:100px;
+  margin-top:50px;
+
 }
 
 .content:nth-child(4){
   margin-bottom: 100px;
+  margin-top:50px;
 }
 
 .footer{
@@ -233,7 +236,7 @@ body {
   width:100%;
  }
 .contents{
-  padding-top: 170px;
+  padding-top: 200px;
  }
 
 .content-group{ 
@@ -247,6 +250,16 @@ margin : 0 auto;
 text-align : center; 
 }
 
+.content:nth-child(3){
+  margin-left: 0;
+  margin-bottom:50px;
+  margin-top:30px;
+}
+
+.content:nth-child(4){
+  margin-bottom: 50px;
+  margin-top:30px;
+}
 
 /* ===PC版では改行せず、レスポンシブ対応時改行されるように↓=== */
  .txt-contents br{
@@ -265,10 +278,9 @@ text-align : center;
   margin-top: 30px;
 }
 */
-.content:nth-child(3){
-  margin-bottom:40px;
-}
-.content:nth-child(4){
-  margin-bottom: 40px;}
 
+.lunch{width:93%; height:93%;}
+.odekake{width:93%; height:93%;}
+.diet{width:95%; height:95%;}
+.support{width:95%; height:95%}
 }
